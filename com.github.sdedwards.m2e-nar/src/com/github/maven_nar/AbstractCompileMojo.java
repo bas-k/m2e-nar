@@ -184,42 +184,42 @@ public abstract class AbstractCompileMojo extends AbstractDependencyMojo impleme
 	}
 
 	public final C getC() {
-		if (c == null && !onlySpecifiedCompilers) {
+		if (c == null) { // && !onlySpecifiedCompilers) {
 			setC(new C());
 		}
 		return c;
 	}
 
 	public final Cpp getCpp() {
-		if (cpp == null && !onlySpecifiedCompilers) {
+		if (cpp == null) { //  && !onlySpecifiedCompilers) {
 			setCpp(new Cpp());
 		}
 		return cpp;
 	}
 
 	public final Fortran getFortran() {
-		if (fortran == null && !onlySpecifiedCompilers) {
+		if (fortran == null) { //  && !onlySpecifiedCompilers) {
 			setFortran(new Fortran());
 		}
 		return fortran;
 	}
 
 	protected final Resource getResource() {
-		if (resource == null && !onlySpecifiedCompilers) {
+		if (resource == null) { //  && !onlySpecifiedCompilers) {
 			setResource(new Resource());
 		}
 		return resource;
 	}
 
 	protected final IDL getIdl() {
-		if (idl == null && !onlySpecifiedCompilers) {
+		if (idl == null) { //  && !onlySpecifiedCompilers) {
 			setIdl(new IDL());
 		}
 		return idl;
 	}
 
 	protected final Message getMessage() {
-		if (message == null && !onlySpecifiedCompilers) {
+		if (message == null) { //  && !onlySpecifiedCompilers) {
 			setMessage(new Message());
 		}
 		return message;
