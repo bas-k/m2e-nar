@@ -68,6 +68,7 @@
 					<product>org.eclipse.platform.ide</product>
 					<redirectTestOutputToFile>true</redirectTestOutputToFile>
 					<excludes>
+						<exclude>**/It0005Test*</exclude>
 						<exclude>**/It0006Test*</exclude>
 					</excludes>
 					<bundleStartLevel>
